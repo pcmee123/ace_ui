@@ -1,0 +1,32 @@
+{
+  "name": "ACE UI",
+  "version": "1.0.0",
+  "normalizedAt": "2026-11-18",
+  "references": [
+    {
+      "id": "reference-01",
+      "sha256": "b32ae8ddbff183d19f24928d1e0273ad25428faeef5eb86fd7ccd60d44acf076"
+    },
+    {
+      "id": "reference-02",
+      "sha256": "6e06762d3d9c4750e26c8b9b69c24efb3287340abd6b7ed0c25c0e0502f01c1d"
+    },
+    {
+      "id": "reference-03",
+      "sha256": "d0fd741976a87923352a3cd41d504e6389593155e13b57c1d01d5ea84253893b"
+    },
+    {
+      "id": "reference-04",
+      "sha256": "2f9384a81901f28641785fedd3ba66a44751e22eb8228c84f054b4b83dd0ebb8"
+    },
+    {
+      "id": "reference-05",
+      "sha256": "506dac4fab6600ef144ec0cbd44c91e4b403fc30961746abbe4fd6a1adcec0d8"
+    },
+    {
+      "id": "reference-06",
+      "sha256": "8fc8289b554938e5b7795d9bf9c1d4ac51b03c0738a7373df90754d6b8f1d2c3"
+    }
+  ],
+  "notes": "Anonymous reference fingerprints; public assets contain no source product names or local source paths."
+}

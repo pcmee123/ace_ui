@@ -1,0 +1,141 @@
+/* ACE UI 1.0.0 · semantic colors and shared geometry. */
+
+:root, [data-ace-theme="dark"] {
+  color-scheme: dark;
+  --ace-bg: #15181b;
+  --ace-sidebar: #101316;
+  --ace-surface: #1b1f22;
+  --ace-surface-hover: #22262a;
+  --ace-border: #2b3035;
+  --ace-border-subtle: #23272b;
+  --ace-text: #e6e8eb;
+  --ace-text-secondary: #a7acb3;
+  --ace-text-muted: #7b828a;
+  --ace-accent: #00f09a;
+  --ace-accent-hover: #38ffb4;
+  --ace-accent-soft: #00f09a12;
+  --ace-action: #00f09a;
+  --ace-action-hover: #38ffb4;
+  --ace-on-action: #04251e;
+  --ace-chart-secondary: #8ba7b8;
+  --ace-field: #121518;
+  --ace-shadow: 0 20px 80px #00000066;
+  --ace-success: #62dba2;
+  --ace-warning: #e8b264;
+  --ace-danger: #f1787f;
+  --ace-info: #85b9e8;
+  --ace-border-strong: #63717b;
+  --ace-overlay: #050809b8;
+  --ace-code: #101316;
+}
+
+[data-ace-theme="light"] {
+  color-scheme: light;
+  --ace-bg: #f7f9fc;
+  --ace-sidebar: #eff3f8;
+  --ace-surface: #ffffff;
+  --ace-surface-hover: #edf3fc;
+  --ace-border: #d7e0ec;
+  --ace-border-subtle: #e2e8f1;
+  --ace-text: #20324a;
+  --ace-text-secondary: #5c6f88;
+  --ace-text-muted: #6d7e94;
+  --ace-accent: #2560c8;
+  --ace-accent-hover: #1c4da7;
+  --ace-accent-soft: #e7effd;
+  --ace-action: #2864d7;
+  --ace-action-hover: #2054bb;
+  --ace-on-action: #ffffff;
+  --ace-chart-secondary: #3676cf;
+  --ace-field: #ffffff;
+  --ace-shadow: 0 20px 80px #243a5a1a;
+  --ace-success: #16714e;
+  --ace-warning: #8c5a0b;
+  --ace-danger: #bf3547;
+  --ace-info: #2560c8;
+  --ace-border-strong: #8596ad;
+  --ace-overlay: #182e4c66;
+  --ace-code: #edf2f8;
+}
+
+[data-ace-theme="sage"] {
+  color-scheme: light;
+  --ace-bg: #f2f6f3;
+  --ace-sidebar: #eaf1ec;
+  --ace-surface: #fbfdfb;
+  --ace-surface-hover: #e4ede7;
+  --ace-border: #cfded3;
+  --ace-border-subtle: #dfe9e2;
+  --ace-text: #1d2922;
+  --ace-text-secondary: #4e6055;
+  --ace-text-muted: #5f7266;
+  --ace-accent: #4a755c;
+  --ace-accent-hover: #3c6149;
+  --ace-accent-soft: #e2eee6;
+  --ace-action: #4a755c;
+  --ace-action-hover: #3f6851;
+  --ace-on-action: #ffffff;
+  --ace-chart-secondary: #4e7d74;
+  --ace-field: #ffffff;
+  --ace-shadow: 0 18px 60px #1d29221a;
+  --ace-success: #346848;
+  --ace-warning: #835b19;
+  --ace-danger: #b83d47;
+  --ace-info: #396c65;
+  --ace-border-strong: #7d9585;
+  --ace-overlay: #1d392a66;
+  --ace-code: #eaf1ec;
+}
+
+[data-ace-theme="eye"] {
+  color-scheme: dark;
+  --ace-bg: #06100c;
+  --ace-sidebar: #040b08;
+  --ace-surface: #0a1a12;
+  --ace-surface-hover: #102a1c;
+  --ace-border: #1d3a2a;
+  --ace-border-subtle: #12261a;
+  --ace-text: #d7e6d0;
+  --ace-text-secondary: #8ba894;
+  --ace-text-muted: #6f8b74;
+  --ace-accent: #4cc47b;
+  --ace-accent-hover: #6fdd96;
+  --ace-accent-soft: #4cc47b14;
+  --ace-action: #2f9e5e;
+  --ace-action-hover: #37b46c;
+  --ace-on-action: #04120a;
+  --ace-chart-secondary: #63b489;
+  --ace-field: #081510;
+  --ace-shadow: 0 20px 80px #00000080;
+  --ace-success: #79d39a;
+  --ace-warning: #d7b56a;
+  --ace-danger: #e88a83;
+  --ace-info: #8bcbb0;
+  --ace-border-strong: #486e51;
+  --ace-overlay: #020906c7;
+  --ace-code: #040b08;
+}
+
+
+:root {
+  --ace-font: Inter, "Segoe UI", "PingFang SC", "Microsoft YaHei", system-ui, sans-serif;
+  --ace-mono: "Cascadia Code", "SFMono-Regular", Consolas, monospace;
+  --ace-text-xs: 12px; --ace-text-sm: 13px; --ace-text-md: 14px; --ace-text-lg: 16px;
+  --ace-text-xl: 20px; --ace-text-2xl: 28px; --ace-text-display: 36px;
+  --ace-line: 1.6; --ace-weight-normal: 400; --ace-weight-medium: 500; --ace-weight-semibold: 600;
+  --ace-space-1: 4px; --ace-space-2: 8px; --ace-space-3: 12px; --ace-space-4: 16px;
+  --ace-space-5: 20px; --ace-space-6: 24px; --ace-space-8: 32px; --ace-space-10: 40px; --ace-space-12: 48px;
+  --ace-radius-sm: 4px; --ace-radius-md: 8px; --ace-radius-lg: 12px; --ace-radius-full: 999px;
+  --ace-control-sm: 28px; --ace-control-md: 36px; --ace-control-lg: 44px;
+  --ace-sidebar-width: 232px; --ace-topbar-height: 64px; --ace-content-max: 1440px;
+  --ace-duration-fast: 140ms; --ace-duration-normal: 200ms; --ace-ease: cubic-bezier(.2,.8,.2,1);
+  --ace-z-sidebar: 30; --ace-z-sticky: 20; --ace-z-toast: 100;
+}
+:root, [data-ace-theme] {
+  --ace-success-soft: color-mix(in srgb, var(--ace-success) 10%, var(--ace-surface));
+  --ace-warning-soft: color-mix(in srgb, var(--ace-warning) 10%, var(--ace-surface));
+  --ace-danger-soft: color-mix(in srgb, var(--ace-danger) 10%, var(--ace-surface));
+  --ace-info-soft: color-mix(in srgb, var(--ace-info) 10%, var(--ace-surface));
+  --ace-accent-border: color-mix(in srgb, var(--ace-accent) 28%, var(--ace-border));
+  --ace-selection: color-mix(in srgb, var(--ace-accent) 24%, transparent);
+}
