@@ -14,4 +14,6 @@
 
 布局从 dashboard/list/settings/detail/chat/login/mobile/starter 模板选择。移动端收起侧栏、主次列堆叠、表格容器内滚动，不允许整页横向溢出。始终实现空、错、加载、成功反馈，所有字段有标签，焦点可见，Dialog 可 Escape 关闭，Tabs 可键盘操作。实际业务接入真实 API；不要把演示提示当成真实保存、登录或上传。
 
+设计 Windows 和手机双端应用时，参考 templates/windows-assistant.html、windows-workbench.html、mobile-assistant.html、mobile-workbench.html，按需引入 css/ace-app.css。Windows 使用窗口标题栏、侧栏和内容分区，手机使用底部导航、固定输入区、任务卡片和底部面板。复用相同的颜色角色和业务状态，按设备调整布局。窗口拖动、最小化、最大化和关闭由实际桌面宿主接管。
+
 若使用 Vue 或 React，由框架管理状态与 DOM，复用 ACE CSS 和图标路径，不混用原生自动挂载与框架渲染。新增可复用模式时补充到设计系统，并保持四皮肤几何一致。交付前检查四主题、390px 与桌面宽度、键盘、焦点、表单校验、空结果和关键操作。

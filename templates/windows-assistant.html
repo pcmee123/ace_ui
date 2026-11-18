@@ -1,0 +1,121 @@
+<!doctype html>
+<html lang="zh-CN" data-ace-theme="dark">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover, interactive-widget=resizes-content">
+  <meta name="color-scheme" content="dark light">
+  <title>Windows AI 助手 · ACE UI</title>
+  <link rel="icon" href="../assets/ace-mark.svg" type="image/svg+xml">
+  <script src="../js/ace-theme-init.js"></script>
+  <link rel="stylesheet" href="../css/ace-ui.css">
+  <link rel="stylesheet" href="../css/ace-app.css">
+  <script defer src="../js/ace-icons.js"></script>
+  <script defer src="../js/ace-ui.js"></script>
+  <script defer src="../showcase/app-shell.js"></script>
+  <script defer src="../showcase/app-assistant.js"></script>
+</head>
+<body class="ace-ui ace-app-preview " data-app data-default-view="chat">
+  <a class="ace-skip" href="#app-main">跳转到主要内容</a>
+  <div class="ace-app-frame" data-window-state="normal">
+          <div class="ace-app-titlebar">
+            <div class="ace-row"><img src="../assets/ace-mark.svg" alt=""><strong>ACE AI 助手</strong></div>
+            <div class="ace-app-window-controls">
+              <button type="button" aria-label="最小化窗口预览" title="最小化窗口预览" data-window-action="minimize"><span data-window-min-glyph aria-hidden="true">−</span></button>
+              <button type="button" aria-label="最大化窗口预览" title="最大化窗口预览" data-window-action="maximize"><span data-ace-icon="square" data-size="14" aria-hidden="true"></span></button>
+              <button type="button" aria-label="关闭窗口预览" title="关闭窗口预览" data-window-action="close"><span data-ace-icon="close" data-size="14" aria-hidden="true"></span></button>
+            </div>
+          </div>
+          <div class="ace-app-shell">
+            <aside class="ace-app-sidebar"><a class="ace-brand" href="../index.html#layouts"><img src="../assets/ace-mark.svg" alt=""><span><strong>ACE AI 助手</strong><small>Windows APP 模板</small></span></a><nav class="ace-nav" aria-label="应用导航" ><a href="#chat" data-app-nav aria-current="page"><span data-ace-icon="message" data-size="19" aria-hidden="true"></span><span>对话</span></a><a href="#history" data-app-nav ><span data-ace-icon="history" data-size="19" aria-hidden="true"></span><span>历史</span></a><a href="#tools" data-app-nav ><span data-ace-icon="box" data-size="19" aria-hidden="true"></span><span>工具</span></a></nav><button type="button" class="ace-btn ace-btn--primary ace-btn--block" data-new-session><span data-ace-icon="plus" data-size="18" aria-hidden="true"></span>新建对话</button>
+              <div><p class="ace-eyebrow">最近对话</p><div class="ace-app-session-list" data-session-list></div></div>
+              <div class="ace-app-sidebar-footer"><a href="mobile-assistant.html">打开手机版AI 助手 <span data-ace-icon="external" data-size="13" aria-hidden="true"></span></a></div>
+            </aside><main class="ace-app-main" id="app-main" tabindex="-1">
+      <header class="ace-app-topbar">
+      <div class="ace-row"><a class="ace-app-mobile-brand" href="../index.html#layouts" aria-label="返回 ACE UI 案例"><img src="../assets/ace-mark.svg" alt=""></a>
+        <div><h1 data-view-title>对话</h1><p class="ace-muted ace-text-xs">ACE AI 助手 · Windows</p></div>
+      </div><div class="ace-row ace-app-topbar-actions"><button type="button" class="ace-btn ace-btn--ghost ace-btn--icon" aria-label="新建对话" title="新建对话" data-new-session><span data-ace-icon="plus" data-size="18" aria-hidden="true"></span></button><button type="button" class="ace-btn ace-btn--ghost ace-btn--icon" aria-label="模型与上下文" title="模型与上下文" data-ace-open="app-context"><span data-ace-icon="layers" data-size="18" aria-hidden="true"></span></button><button type="button" class="ace-btn ace-btn--ghost ace-btn--icon" aria-label="外观与模板" title="外观与模板" data-ace-open="app-settings"><span data-ace-icon="settings" data-size="18" aria-hidden="true"></span></button></div>
+    </header>
+      <div class="ace-app-body"><section class="ace-app-view ace-app-chat-view" data-app-view="chat" data-view-name="智能对话" >
+<div class="ace-app-conversation">
+      <div class="ace-app-thread">
+        <div class="ace-app-chat-inner">
+          <div id="app-intro">
+            <header class="ace-app-intro"><span class="ace-avatar"><span data-ace-icon="spark" data-size="27" aria-hidden="true"></span></span>
+              <h2>今天想一起做什么<span class="ace-accent">？</span></h2>
+              <p>选一个起点，或直接描述你的想法。</p>
+            </header>
+            <div class="ace-grid ace-grid--2 ace-app-prompts"><button class="ace-card ace-app-prompt" type="button" data-app-prompt="帮我制定一个项目启动计划。">
+      <span data-ace-icon="file-text" data-size="20" aria-hidden="true"></span><span><strong>制定项目计划</strong><small>明确范围、负责人和本周交付物</small></span></button><button class="ace-card ace-app-prompt" type="button" data-app-prompt="帮我把本周待办拆解成可执行的任务。">
+      <span data-ace-icon="layers" data-size="20" aria-hidden="true"></span><span><strong>拆解待办事项</strong><small>将复杂任务拆成可执行的步骤</small></span></button><button class="ace-card ace-app-prompt" type="button" data-app-prompt="帮我列一个工作周报提纲。">
+      <span data-ace-icon="chart" data-size="20" aria-hidden="true"></span><span><strong>整理工作周报</strong><small>按进展、风险与下一步整理</small></span></button><button class="ace-card ace-app-prompt" type="button" data-app-prompt="帮我起草一封项目进度沟通邮件。">
+      <span data-ace-icon="pen" data-size="20" aria-hidden="true"></span><span><strong>起草沟通邮件</strong><small>把重点整理成一封清晰的邮件</small></span></button></div>
+          </div>
+          <div id="app-messages" class="ace-app-message-list" role="log" aria-live="polite" aria-label="对话消息" hidden></div>
+        </div>
+      </div>
+      <div class="ace-app-composer-wrap">
+        <form id="app-composer" class="ace-composer">
+          <label for="app-message" class="ace-sr-only">发给 ACE 助手</label>
+          <textarea id="app-message" name="message" maxlength="2000" required placeholder="给 ACE 助手发消息…"></textarea>
+          <div class="ace-row ace-between">
+            <button type="button" class="ace-btn ace-btn--ghost ace-btn--sm" data-ace-open="app-context" aria-label="选择演示模型"><span data-ace-icon="layers" data-size="18" aria-hidden="true"></span><span data-current-model>ACE 通用</span></button>
+            <button class="ace-btn ace-btn--primary" type="submit"><span data-ace-icon="send" data-size="16" aria-hidden="true"></span>发送</button>
+          </div>
+        </form>
+        <p class="ace-app-composer-note">本地演示回复 · Ctrl + Enter 发送</p>
+      </div>
+    </div><aside class="ace-app-context ace-stack">
+          <h2>当前上下文</h2>
+          <div class="ace-card"><div class="ace-card__body ace-stack ace-stack--sm">
+            <strong>个人工作空间</strong><p class="ace-muted ace-text-xs">项目计划、任务拆解和写作助手。</p>
+          </div></div>
+          <p class="ace-label">回复模式</p>
+          <p class="ace-muted ace-text-xs">演示回复由模板生成，对话保存在本机浏览器。</p>
+        </aside>
+</section><section class="ace-app-view " data-app-view="history" data-view-name="对话历史" hidden>
+<div class="ace-app-content">
+      <header class="ace-page-head"><div><h2 class="ace-title">对话历史</h2><p class="ace-description">继续之前的讨论，或开启新的对话。</p></div>
+        <button type="button" class="ace-btn ace-btn--primary" data-new-session><span data-ace-icon="plus" data-size="18" aria-hidden="true"></span>新建对话</button></header>
+      <div class="ace-card"><div class="ace-card__body ace-app-session-list" data-session-list></div></div>
+    </div>
+</section><section class="ace-app-view " data-app-view="tools" data-view-name="常用工具" hidden>
+<div class="ace-app-content">
+      <header class="ace-page-head"><div><h2 class="ace-title">常用工具</h2><p class="ace-description">选用模板，将提示填入新的对话。</p></div></header>
+      <div class="ace-grid ace-grid--2 ace-app-prompts"><button class="ace-card ace-app-prompt" type="button" data-app-prompt="帮我制定一个项目启动计划。">
+      <span data-ace-icon="file-text" data-size="20" aria-hidden="true"></span><span><strong>制定项目计划</strong><small>明确范围、负责人和本周交付物</small></span></button><button class="ace-card ace-app-prompt" type="button" data-app-prompt="帮我把本周待办拆解成可执行的任务。">
+      <span data-ace-icon="layers" data-size="20" aria-hidden="true"></span><span><strong>拆解待办事项</strong><small>将复杂任务拆成可执行的步骤</small></span></button><button class="ace-card ace-app-prompt" type="button" data-app-prompt="帮我列一个工作周报提纲。">
+      <span data-ace-icon="chart" data-size="20" aria-hidden="true"></span><span><strong>整理工作周报</strong><small>按进展、风险与下一步整理</small></span></button><button class="ace-card ace-app-prompt" type="button" data-app-prompt="帮我起草一封项目进度沟通邮件。">
+      <span data-ace-icon="pen" data-size="20" aria-hidden="true"></span><span><strong>起草沟通邮件</strong><small>把重点整理成一封清晰的邮件</small></span></button></div>
+    </div>
+</section></div>
+      <nav class="ace-app-mobile-nav" aria-label="应用导航" data-compact-nav><a href="#chat" data-app-nav aria-current="page"><span data-ace-icon="message" data-size="19" aria-hidden="true"></span><span>对话</span></a><a href="#history" data-app-nav ><span data-ace-icon="history" data-size="19" aria-hidden="true"></span><span>历史</span></a><a href="#tools" data-app-nav ><span data-ace-icon="box" data-size="19" aria-hidden="true"></span><span>工具</span></a></nav>
+    </main>
+          </div>
+        </div>
+        <section class="ace-app-reopen" data-window-reopen hidden><h1>ACE AI 助手</h1>
+          <button type="button" class="ace-btn ace-btn--primary" data-window-action="reopen"><span data-ace-icon="layout" data-size="18" aria-hidden="true"></span>重新打开窗口</button>
+          <a href="../index.html#layouts">返回案例</a>
+        </section>
+  <dialog id="app-settings" class="ace-dialog " aria-labelledby="app-settings-title" >
+      <header class="ace-dialog__head"><h2 id="app-settings-title">外观与模板</h2><button type="button" class="ace-btn ace-btn--ghost ace-btn--icon" aria-label="关闭面板" title="关闭面板" data-ace-close><span data-ace-icon="close" data-size="18" aria-hidden="true"></span></button></header>
+      <div class="ace-dialog__body ace-stack">
+      <label class="ace-field"><span class="ace-label">界面皮肤</span><select class="ace-select" data-ace-theme-select>
+      <option value="dark">石墨深色</option><option value="light">清透浅色</option>
+      <option value="sage">豆沙绿</option><option value="eye">深绿护眼</option>
+    </select></label>
+      <div class="ace-stack ace-stack--sm"><a href="mobile-assistant.html">查看手机版AI 助手</a>
+      <a href="windows-workbench.html">Windows管理工作台</a>
+      <a href="../index.html#layouts">返回 ACE UI 页面布局</a></div></div>
+    </dialog>
+  <dialog id="app-context" class="ace-dialog " aria-labelledby="app-context-title" >
+      <header class="ace-dialog__head"><h2 id="app-context-title">模型与上下文</h2><button type="button" class="ace-btn ace-btn--ghost ace-btn--icon" aria-label="关闭面板" title="关闭面板" data-ace-close><span data-ace-icon="close" data-size="18" aria-hidden="true"></span></button></header>
+      <div class="ace-dialog__body ace-stack"><div class="ace-field"><label class="ace-label" for="app-model">演示模型</label><select class="ace-select" id="app-model">
+      <option value="general">ACE 通用</option><option value="writing">ACE 写作</option>
+      <option value="analysis">ACE 分析</option>
+    </select></div>
+      <p class="ace-muted">个人工作空间 · 演示模型用于呈现切换和回复标签。</p>
+    </div>
+    </dialog>
+  <div class="ace-toasts" aria-live="polite" aria-relevant="additions"></div>
+</body>
+</html>

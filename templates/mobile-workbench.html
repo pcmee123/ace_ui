@@ -1,0 +1,112 @@
+<!doctype html>
+<html lang="zh-CN" data-ace-theme="dark">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover, interactive-widget=resizes-content">
+  <meta name="color-scheme" content="dark light">
+  <title>手机 管理工作台 · ACE UI</title>
+  <link rel="icon" href="../assets/ace-mark.svg" type="image/svg+xml">
+  <script src="../js/ace-theme-init.js"></script>
+  <link rel="stylesheet" href="../css/ace-ui.css">
+  <link rel="stylesheet" href="../css/ace-app.css">
+  <script defer src="../js/ace-icons.js"></script>
+  <script defer src="../js/ace-ui.js"></script>
+  <script defer src="../showcase/app-shell.js"></script>
+  <script defer src="../showcase/app-workbench.js"></script>
+</head>
+<body class="ace-ui ace-app-preview ace-app-mobile-dialog" data-app data-default-view="overview">
+  <a class="ace-skip" href="#app-main">跳转到主要内容</a>
+  <div class="ace-app-mobile"><main class="ace-app-main" id="app-main" tabindex="-1">
+      <header class="ace-app-topbar">
+      <div class="ace-row"><a class="ace-app-mobile-brand" href="../index.html#layouts" aria-label="返回 ACE UI 案例"><img src="../assets/ace-mark.svg" alt=""></a>
+        <div><h1 data-view-title>概览</h1><p class="ace-muted ace-text-xs">ACE 管理工作台 · 手机</p></div>
+      </div><div class="ace-row ace-app-topbar-actions"><button type="button" class="ace-btn ace-btn--ghost ace-btn--icon" aria-label="外观与模板" title="外观与模板" data-ace-open="app-settings"><span data-ace-icon="settings" data-size="18" aria-hidden="true"></span></button></div>
+    </header>
+      <div class="ace-app-body"><section class="ace-app-view " data-app-view="overview" data-view-name="工作概览" >
+<div class="ace-app-content ace-stack">
+      <header class="ace-page-head"><div><h2 class="ace-title">管理工作台</h2><p class="ace-description">掌握团队任务、交付进度与最新动态。</p></div><button type="button" class="ace-btn ace-btn--primary" data-ace-open="app-new-task"><span data-ace-icon="plus" data-size="18" aria-hidden="true"></span>新建任务</button></header>
+      <div class="ace-grid ace-app-metrics"><article class="ace-card ace-stat"><span class="ace-stat__label">全部任务<span data-ace-icon="layers" data-size="16" aria-hidden="true"></span></span><strong class="ace-stat__value ace-mono" data-task-metric="all">4</strong><span class="ace-muted ace-text-xs">本工作空间</span></article><article class="ace-card ace-stat"><span class="ace-stat__label">待处理<span data-ace-icon="inbox" data-size="16" aria-hidden="true"></span></span><strong class="ace-stat__value ace-mono" data-task-metric="todo">1</strong><span class="ace-muted ace-text-xs">等待分配或开始</span></article><article class="ace-card ace-stat"><span class="ace-stat__label">进行中<span data-ace-icon="clock" data-size="16" aria-hidden="true"></span></span><strong class="ace-stat__value ace-mono" data-task-metric="doing">1</strong><span class="ace-muted ace-text-xs">当前处理事项</span></article><article class="ace-card ace-stat"><span class="ace-stat__label">已完成<span data-ace-icon="check" data-size="16" aria-hidden="true"></span></span><strong class="ace-stat__value ace-mono" data-task-metric="done">2</strong><span class="ace-muted ace-text-xs">已确认交付</span></article></div>
+      <div class="ace-app-dashboard-grid">
+        <section class="ace-card">
+          <header class="ace-card__head"><h2>交付进度</h2><span class="ace-ml-auto ace-muted ace-text-xs">当前工作空间</span></header>
+          <div class="ace-card__body">
+            <div class="ace-app-chart-summary"><strong class="ace-mono" data-work-percent>50%</strong><span class="ace-muted">已完成</span></div>
+            <progress class="ace-progress" max="100" value="50" data-work-progress aria-label="任务完成比例"></progress>
+            <div class="ace-row ace-between ace-text-xs" style="margin-top:16px"><span class="ace-muted">按任务状态实时更新</span><a href="#tasks">查看任务 <span data-ace-icon="arrow" data-size="13" aria-hidden="true"></span></a></div>
+          </div>
+        </section>
+        <section class="ace-card"><header class="ace-card__head"><h2>最近动态</h2><a class="ace-ml-auto ace-text-xs" href="#activity">全部</a></header>
+          <div class="ace-card__body"><ol class="ace-timeline" data-activity-list="3"></ol></div></section>
+      </div>
+      <section class="ace-card">
+        <header class="ace-card__head"><h2>工作空间</h2><span class="ace-badge ace-badge--accent">产品与运营</span></header>
+        <div class="ace-card__body ace-row ace-wrap">
+          <a class="ace-btn" href="#tasks"><span data-ace-icon="layers" data-size="18" aria-hidden="true"></span>任务列表</a>
+          <a class="ace-btn" href="#activity"><span data-ace-icon="activity" data-size="18" aria-hidden="true"></span>团队动态</a>
+          <button type="button" class="ace-btn " data-ace-open="app-settings"><span data-ace-icon="settings" data-size="18" aria-hidden="true"></span>外观设置</button>
+        </div>
+      </section>
+    </div>
+</section><section class="ace-app-view " data-app-view="tasks" data-view-name="任务管理" hidden>
+<div class="ace-app-content">
+      <header class="ace-page-head"><div><h2 class="ace-title">任务管理</h2><p class="ace-description">查找任务、查看详情与更新状态。</p></div><button type="button" class="ace-btn ace-btn--primary" data-ace-open="app-new-task"><span data-ace-icon="plus" data-size="18" aria-hidden="true"></span>新建任务</button></header>
+      <section class="ace-card">
+        <div class="ace-app-task-toolbar">
+          <label class="ace-input-group"><span data-ace-icon="search" data-size="16" aria-hidden="true"></span><span class="ace-sr-only">搜索任务</span><input id="app-task-search" type="search" placeholder="搜索任务、负责人或分组"></label>
+          <label class="ace-sr-only" for="app-task-filter">任务状态筛选</label>
+          <select class="ace-select" id="app-task-filter"><option value="">全部状态</option><option value="todo">待处理</option><option value="doing">进行中</option><option value="done">已完成</option></select>
+        </div>
+        <div class="ace-app-desktop-tasks ace-table-wrap"><table class="ace-table">
+          <caption class="ace-sr-only">工作空间任务</caption>
+          <thead><tr><th scope="col">任务</th><th scope="col">分组</th><th scope="col">负责人</th><th scope="col">状态</th><th scope="col">更新日期</th><th scope="col">操作</th></tr></thead>
+          <tbody data-task-rows></tbody>
+        </table></div>
+        <div class="ace-app-mobile-task-list" data-task-cards></div>
+        <div class="ace-empty" data-empty-tasks hidden><span data-ace-icon="search" data-size="28" aria-hidden="true"></span><h3>没有匹配的任务</h3><p>试试其他关键词或清除筛选。</p><button type="button" class="ace-btn " data-reset-task-filter>清除筛选</button></div>
+        <div class="ace-card__foot"><span data-task-count aria-live="polite"></span><span>本地演示数据</span></div>
+      </section>
+    </div>
+</section><section class="ace-app-view " data-app-view="activity" data-view-name="团队动态" hidden>
+<div class="ace-app-content">
+      <header class="ace-page-head"><div><h2 class="ace-title">团队动态</h2><p class="ace-description">查看任务创建、交付与状态变更记录。</p></div></header>
+      <section class="ace-card"><div class="ace-card__body"><ol class="ace-timeline" data-activity-list="40"></ol></div></section>
+    </div>
+</section></div>
+      <nav class="ace-app-mobile-nav" aria-label="应用导航" ><a href="#overview" data-app-nav aria-current="page"><span data-ace-icon="grid" data-size="19" aria-hidden="true"></span><span>概览</span></a><a href="#tasks" data-app-nav ><span data-ace-icon="layers" data-size="19" aria-hidden="true"></span><span>任务</span></a><a href="#activity" data-app-nav ><span data-ace-icon="activity" data-size="19" aria-hidden="true"></span><span>动态</span></a></nav>
+    </main></div>
+  <dialog id="app-settings" class="ace-dialog " aria-labelledby="app-settings-title" >
+      <header class="ace-dialog__head"><h2 id="app-settings-title">外观与模板</h2><button type="button" class="ace-btn ace-btn--ghost ace-btn--icon" aria-label="关闭面板" title="关闭面板" data-ace-close><span data-ace-icon="close" data-size="18" aria-hidden="true"></span></button></header>
+      <div class="ace-dialog__body ace-stack">
+      <label class="ace-field"><span class="ace-label">界面皮肤</span><select class="ace-select" data-ace-theme-select>
+      <option value="dark">石墨深色</option><option value="light">清透浅色</option>
+      <option value="sage">豆沙绿</option><option value="eye">深绿护眼</option>
+    </select></label>
+      <div class="ace-stack ace-stack--sm"><a href="windows-workbench.html">查看 Windows 版管理工作台</a>
+      <a href="mobile-assistant.html">手机 AI 助手</a>
+      <a href="../index.html#layouts">返回 ACE UI 页面布局</a></div></div>
+    </dialog>
+  <dialog id="app-new-task" class="ace-dialog ace-app-regular-dialog" aria-labelledby="app-new-task-title" >
+      <header class="ace-dialog__head"><h2 id="app-new-task-title">新建任务</h2><button type="button" class="ace-btn ace-btn--ghost ace-btn--icon" aria-label="关闭面板" title="关闭面板" data-ace-close><span data-ace-icon="close" data-size="18" aria-hidden="true"></span></button></header>
+      <form id="app-create-task">
+      <div class="ace-dialog__body ace-stack">
+        <p class="ace-muted">任务保存在当前浏览器。</p>
+        <label class="ace-field"><span class="ace-label">任务名称</span><input class="ace-input" name="title" required maxlength="80" autofocus></label>
+        <label class="ace-field"><span class="ace-label">负责人</span><input class="ace-input" name="owner" required maxlength="24"></label>
+        <div class="ace-grid ace-grid--2">
+          <label class="ace-field"><span class="ace-label">分组</span><select class="ace-select" name="group"><option>版本交付</option><option>产品运营</option><option>系统管理</option></select></label>
+          <label class="ace-field"><span class="ace-label">优先级</span><select class="ace-select" name="priority"><option>中</option><option>高</option><option>低</option></select></label>
+        </div>
+      </div>
+      <div class="ace-dialog__foot"><button type="button" class="ace-btn" data-ace-close>取消</button><button type="submit" class="ace-btn ace-btn--primary">创建任务</button></div>
+    </form>
+    </dialog><dialog id="app-task-detail" class="ace-dialog ace-drawer" aria-labelledby="app-task-detail-title" >
+      <header class="ace-dialog__head"><h2 id="app-task-detail-title">任务详情</h2><button type="button" class="ace-btn ace-btn--ghost ace-btn--icon" aria-label="关闭面板" title="关闭面板" data-ace-close><span data-ace-icon="close" data-size="18" aria-hidden="true"></span></button></header>
+      <form><div class="ace-dialog__body ace-stack">
+      <div><p data-detail-id class="ace-eyebrow"></p><h3 id="app-detail-title"></h3></div>
+      <dl class="ace-grid ace-grid--3"><div><dt class="ace-label">分组</dt><dd data-detail-group></dd></div><div><dt class="ace-label">负责人</dt><dd data-detail-owner></dd></div><div><dt class="ace-label">优先级</dt><dd data-detail-priority></dd></div></dl>
+      <div class="ace-field"><label class="ace-label" for="app-detail-status">任务状态</label><select class="ace-select" name="status" id="app-detail-status"><option value="todo">待处理</option><option value="doing">进行中</option><option value="done">已完成</option></select></div>
+      </div><div class="ace-dialog__foot"><button type="button" class="ace-btn" data-ace-close>取消</button><button class="ace-btn ace-btn--primary" type="submit">保存状态</button></div></form>
+    </dialog>
+  <div class="ace-toasts" aria-live="polite" aria-relevant="additions"></div>
+</body>
+</html>

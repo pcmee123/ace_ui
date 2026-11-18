@@ -116,6 +116,12 @@
 .layout-label .ace-row { justify-content: space-between; margin-top: 8px; }
 .layout-label h2 { font-size: 16px; font-weight: 500; }
 .layout-label p { color: var(--ace-text-secondary); font-size: 12px; margin-top: 5px; }
+.app-gallery { margin-bottom: 26px; }
+.app-gallery > h2 { font-size: 15px; }
+.app-gallery-image { display: flex; justify-content: center; aspect-ratio: 16 / 9; overflow: hidden; background: var(--ace-field); border-bottom: 1px solid var(--ace-border); }
+.app-gallery-image img { display: block; width: 100%; height: 100%; object-fit: cover; object-position: top center; }
+.app-gallery-image[data-platform="mobile"] img { width: auto; max-width: 60%; height: 100%; object-fit: contain; }
+.app-gallery .layout-label h3 { font-size: 16px; font-weight: 500; }
 .wireframe-list .wire-content > div,.wireframe-settings .wire-content > div { background: repeating-linear-gradient(0deg,var(--ace-surface) 0 17px,var(--ace-border) 17px 18px); }
 .wireframe-list .wire-content { height: 90px; }
 .wireframe-list .wire-content aside { display: none; }

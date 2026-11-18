@@ -2,7 +2,16 @@
 
 让每个项目，都感觉熟悉。
 
-ACE UI 是框架无关的轻量设计系统，默认石墨深色，提供四种配色、32 个常见组件、8 套页面布局和 85 个 SVG 图标，附带可直接使用的 CSS、中文设计规范及 Vue / React 接入示例，帮助不同项目保持一致的视觉与交互。
+ACE UI 是框架无关的轻量设计系统，默认石墨深色，提供四种配色、32 个常见组件、12 套页面模板和 85 个 SVG 图标。内含 Windows 与手机双端的 AI 助手、管理工作台案例，以及可直接使用的 CSS、中文规范和 Vue / React 接入示例。
+
+## 双端 APP 案例
+
+| 案例 | Windows 窗口 | 手机 APP |
+| --- | --- | --- |
+| AI 助手 | [窗口模板](templates/windows-assistant.html) · [截图](docs/screenshots/windows-assistant.png) | [手机模板](templates/mobile-assistant.html) · [截图](docs/screenshots/mobile-assistant.png) |
+| 管理工作台 | [窗口模板](templates/windows-workbench.html) · [截图](docs/screenshots/windows-workbench.png) | [手机模板](templates/mobile-workbench.html) · [截图](docs/screenshots/mobile-workbench.png) |
+
+AI 助手包含对话、历史、提示模板和模型选择。管理工作台包含概览、任务筛选与创建、状态更新和动态记录。四个模板都可从本地 `index.html#layouts` 打开，支持四种皮肤和本地演示数据。Windows 窗口控件在浏览器内预览窗口状态，手机模板适合在浏览器和 WebView 中复用。接入方式见 [双端 APP 模板](docs/双端APP模板.md)。
 
 ## 界面截图
 
@@ -30,7 +39,7 @@ ACE UI 是框架无关的轻量设计系统，默认石墨深色，提供四种�
 
 - 直接双击 `index.html`，无需联网、安装依赖或构建。
 - 或在本目录执行 `node preview.mjs`，访问 `http://127.0.0.1:8095`。也可双击 `启动预览.cmd`。
-- 目录 `templates/` 内 8 个页面可独立打开；四种皮肤会在当前浏览器中记忆。
+- 目录 `templates/` 内 12 个页面可独立打开。四种皮肤会在当前浏览器中记忆。
 - 所有业务数值、认证、聊天、上传与保存均为明确标注的本地交互示例；实际业务需接入 API。
 
 ## 包含什么
@@ -40,13 +49,14 @@ ACE UI 是框架无关的轻量设计系统，默认石墨深色，提供四种�
 | `css/ace-ui.css` | 总入口，依次引入变量、基础、组件、布局与工具类 |
 | `css/ace-tokens.css` | 四种皮肤 + 字号、间距、圆角、动效等共享变量 |
 | `dist/ace-ui.css` | 已合并的单文件 CSS，复制这一份即可使用全部样式 |
+| `css/ace-app.css` | APP 模板附加样式，提供窗口外框、固定输入区、底部导航和底部面板 |
 | `js/` | 可选原生交互：主题、图标、Toast、Dialog、Drawer、Tabs、移动导航 |
 | `tokens/ace-tokens.json` | 可读 JSON 颜色与几何规范，便于其他平台转译 |
 | `icons/svg/` | 85 个独立 SVG 图标 |
 | `icons/ace-sprite.svg` | HTTP 环境可用的 SVG sprite |
 | `icons/ace-icons.json` | 图标路径数据，便于框架按需渲染 |
 | `assets/ace-mark.svg` | ACE UI 标识，矢量源文件 |
-| `templates/` | 控制台、资源列表、设置、详情、AI 工作空间、认证、移动工作台、起步骨架 |
+| `templates/` | 8 个通用页面，以及 Windows 和手机双端的 AI 助手、管理工作台 |
 | `examples/` | 最小 HTML、Vue 3 与 React 接入示例 |
 | `docs/` | 中文设计语言、组件规范、主题接入、图标规则与来源说明 |
 | `AI_PROMPT.md` | 可直接交给后续 AI 项目的统一 UI 指令 |
