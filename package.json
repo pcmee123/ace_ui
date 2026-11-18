@@ -1,0 +1,21 @@
+{
+  "name": "ace-ui-design",
+  "version": "1.0.0",
+  "private": true,
+  "description": "ACE UI unified design language, components and page patterns",
+  "scripts": {
+    "preview": "node preview.mjs",
+    "check": "node scripts/check.mjs"
+  },
+  "files": [
+    "css",
+    "dist",
+    "js",
+    "icons",
+    "tokens",
+    "assets",
+    "templates",
+    "docs",
+    "examples"
+  ]
+}

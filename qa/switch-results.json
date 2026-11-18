@@ -1,0 +1,126 @@
+{
+  "status": "passed",
+  "cases": 16,
+  "results": [
+    {
+      "theme": "dark",
+      "viewport": 1440,
+      "pointer": "fine",
+      "track": "34x20",
+      "passed": true
+    },
+    {
+      "theme": "light",
+      "viewport": 1440,
+      "pointer": "fine",
+      "track": "34x20",
+      "passed": true
+    },
+    {
+      "theme": "sage",
+      "viewport": 1440,
+      "pointer": "fine",
+      "track": "34x20",
+      "passed": true
+    },
+    {
+      "theme": "eye",
+      "viewport": 1440,
+      "pointer": "fine",
+      "track": "34x20",
+      "passed": true
+    },
+    {
+      "theme": "dark",
+      "viewport": 390,
+      "pointer": "fine",
+      "track": "34x20",
+      "passed": true
+    },
+    {
+      "theme": "light",
+      "viewport": 390,
+      "pointer": "fine",
+      "track": "34x20",
+      "passed": true
+    },
+    {
+      "theme": "sage",
+      "viewport": 390,
+      "pointer": "fine",
+      "track": "34x20",
+      "passed": true
+    },
+    {
+      "theme": "eye",
+      "viewport": 390,
+      "pointer": "fine",
+      "track": "34x20",
+      "passed": true
+    },
+    {
+      "theme": "dark",
+      "viewport": 1440,
+      "pointer": "coarse",
+      "track": "42x26",
+      "passed": true
+    },
+    {
+      "theme": "light",
+      "viewport": 1440,
+      "pointer": "coarse",
+      "track": "42x26",
+      "passed": true
+    },
+    {
+      "theme": "sage",
+      "viewport": 1440,
+      "pointer": "coarse",
+      "track": "42x26",
+      "passed": true
+    },
+    {
+      "theme": "eye",
+      "viewport": 1440,
+      "pointer": "coarse",
+      "track": "42x26",
+      "passed": true
+    },
+    {
+      "theme": "dark",
+      "viewport": 390,
+      "pointer": "coarse",
+      "track": "42x26",
+      "passed": true
+    },
+    {
+      "theme": "light",
+      "viewport": 390,
+      "pointer": "coarse",
+      "track": "42x26",
+      "passed": true
+    },
+    {
+      "theme": "sage",
+      "viewport": 390,
+      "pointer": "coarse",
+      "track": "42x26",
+      "passed": true
+    },
+    {
+      "theme": "eye",
+      "viewport": 390,
+      "pointer": "coarse",
+      "track": "42x26",
+      "passed": true
+    }
+  ],
+  "behaviors": [
+    "pointer click",
+    "keyboard Space",
+    "disabled state",
+    "thumb containment",
+    "checkbox and radio unaffected",
+    "settings template"
+  ]
+}

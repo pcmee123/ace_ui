@@ -1,0 +1,21 @@
+/* Opt in with .ace-ui; no global element reset outside this root. */
+.ace-ui, .ace-ui *, .ace-ui *::before, .ace-ui *::after { box-sizing: border-box; }
+.ace-ui { margin: 0; background: var(--ace-bg); color: var(--ace-text); font: var(--ace-text-sm)/var(--ace-line) var(--ace-font); -webkit-font-smoothing: antialiased; text-rendering: optimizeLegibility; }
+.ace-ui :where(h1,h2,h3,h4,p,figure,pre) { margin: 0; }
+.ace-ui :where(button,input,textarea,select) { font: inherit; color: inherit; }
+.ace-ui :where(button,a,input,select,textarea,summary) { -webkit-tap-highlight-color: transparent; }
+.ace-ui :where(button) { cursor: pointer; }
+.ace-ui :where(button:disabled,input:disabled,textarea:disabled,select:disabled) { cursor: not-allowed; opacity: .48; }
+.ace-ui :where(a) { color: var(--ace-accent); text-decoration: none; }
+.ace-ui :where(a:hover) { text-decoration: underline; }
+.ace-ui :where(button,a,input,select,textarea,summary,[tabindex]):focus-visible { outline: 2px solid var(--ace-accent); outline-offset: 3px; }
+.ace-ui ::selection { background: var(--ace-selection); }
+.ace-ui [hidden] { display: none !important; }
+.ace-ui svg { flex-shrink: 0; }
+.ace-ui ::-webkit-scrollbar { width: 8px; height: 8px; }
+.ace-ui ::-webkit-scrollbar-thumb { background: var(--ace-border-strong); border: 2px solid var(--ace-bg); border-radius: 8px; }
+.ace-icon { display: inline-block; width: 18px; height: 18px; vertical-align: middle; fill: none; stroke: currentColor; stroke-width: 1.7; stroke-linecap: round; stroke-linejoin: round; }
+.ace-sr-only { position: absolute; width: 1px; height: 1px; padding: 0; margin: -1px; overflow: hidden; clip: rect(0,0,0,0); white-space: nowrap; border: 0; }
+.ace-skip { position: fixed; top: -100px; left: 16px; z-index: 200; padding: 8px 16px; background: var(--ace-action); color: var(--ace-on-action) !important; }
+.ace-skip:focus { top: 8px; }
+@media(prefers-reduced-motion:reduce) { .ace-ui *, .ace-ui *::before, .ace-ui *::after { animation: none !important; transition: none !important; scroll-behavior: auto !important; } }

@@ -1,0 +1,58 @@
+{
+  "status": "passed",
+  "layoutCases": 120,
+  "themes": [
+    "dark",
+    "light",
+    "sage",
+    "eye"
+  ],
+  "viewports": [
+    1440,
+    390
+  ],
+  "routes": 7,
+  "templates": 8,
+  "icons": 85,
+  "interactions": [
+    "dialog focus/escape/submit",
+    "keyboard tabs",
+    "icon search/copy",
+    "list filter/pagination/empty/drawer",
+    "form validation",
+    "chat safe text",
+    "file selection",
+    "mobile nav",
+    "theme persistence",
+    "offline file preview"
+  ],
+  "contrasts": {
+    "dark": {
+      "text": 13.515790159060991,
+      "secondary": 7.264813461610761,
+      "action": 10.81121744704515,
+      "inputBorder": 3.645683613381946
+    },
+    "light": {
+      "text": 12.990720144062408,
+      "secondary": 5.141573552997904,
+      "action": 5.392425913653907,
+      "inputBorder": 3.015822877439955
+    },
+    "sage": {
+      "text": 14.753844184110735,
+      "secondary": 6.567528844382511,
+      "action": 5.262859216121163,
+      "inputBorder": 3.2259728230614417
+    },
+    "eye": {
+      "text": 13.783972514928923,
+      "secondary": 6.949274749261528,
+      "action": 5.632171425632358,
+      "inputBorder": 3.2217747047859615
+    }
+  },
+  "scriptErrors": [],
+  "missingAssets": [],
+  "externalRequests": []
+}
