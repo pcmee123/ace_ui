@@ -1,6 +1,30 @@
-# ACE UI
+# ACE UI · 统一设计语言与组件库
 
-ACE UI 是面向多项目复用的统一设计语言。默认 **石墨深色**；清透浅色、豆沙绿、深绿护眼仅替换颜色，一套组件、布局与交互贯穿四种皮肤。
+让每个项目，都感觉熟悉。
+
+ACE UI 是框架无关的轻量设计系统，默认石墨深色，提供四种配色、32 个常见组件、8 套页面布局和 85 个 SVG 图标，附带可直接使用的 CSS、中文设计规范及 Vue / React 接入示例，帮助不同项目保持一致的视觉与交互。
+
+## 界面截图
+
+四种皮肤共享同一套布局、组件与交互，只替换颜色。点击图片可查看原图。
+
+| 石墨深色 · 默认皮肤 | 清透浅色 |
+| --- | --- |
+| ![ACE UI 石墨深色工作台：统计卡片、趋势图、资源列表与状态面板](docs/screenshots/dashboard-dark.png) | ![ACE UI 清透浅色工作台：白色表面与蓝色强调色](docs/screenshots/dashboard-light.png) |
+| **豆沙绿** | **深绿护眼** |
+| ![ACE UI 豆沙绿工作台：浅灰绿色表面与低饱和绿色强调](docs/screenshots/dashboard-sage.png) | ![ACE UI 深绿护眼工作台：深绿表面与柔和绿色强调](docs/screenshots/dashboard-eye.png) |
+
+### 常见组件
+
+按钮、表单、搜索、选择器、复选框与开关，保持统一的间距、边界和状态语言。
+
+![ACE UI 常见组件：按钮、输入框、搜索、选择器、多行文本、复选框与开关](docs/screenshots/components.png)
+
+### 移动工作台
+
+响应式卡片、触摸控件与底部导航，延续同一套设计语言。
+
+<img src="docs/screenshots/mobile.png" alt="ACE UI 移动工作台，展示连接状态、统计卡片与底部导航" width="320">
 
 ## 预览
 
